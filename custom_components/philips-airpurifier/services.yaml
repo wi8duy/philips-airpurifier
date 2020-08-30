@@ -10,6 +10,16 @@ set_mode:
       description: One of "Auto Mode", "Allergen Mode", "Sleep Mode", "Bacteria", "Night".
       example: "Auto Mode"
 
+set_speed:
+  description: Set the device speed (if supported)
+  fields:
+    entity_id:
+      description: Name(s) of the entities to set speed
+      example: "fan.living_room"
+    speed:
+      description: One of "Silent", "Turbo", "Speed 1", "Speed 2", "Speed 3".
+      example: "Silent"
+
 set_function:
   description: Set the device function (if supported)
   fields:
