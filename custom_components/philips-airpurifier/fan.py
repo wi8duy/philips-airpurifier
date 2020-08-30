@@ -35,6 +35,10 @@ SERVICE_SET_MODE_SCHEMA = AIRPURIFIER_SERVICE_SCHEMA.extend(
     {vol.Required(SERVICE_ATTR_MODE): vol.In(MODE_MAP.values())}
 )
 
+SERVICE_SET_SPEED_SCHEMA = AIRPURIFIER_SERVICE_SCHEMA.extend(
+    {vol.Required(SERVICE_ATTR_SPEED): vol.In(SPEED_MAP.values())}
+)
+
 SERVICE_SET_FUNCTION_SCHEMA = AIRPURIFIER_SERVICE_SCHEMA.extend(
     {vol.Required(SERVICE_ATTR_FUNCTION): vol.In(FUNCTION_MAP.values())}
 )
@@ -100,6 +104,10 @@ SERVICE_TO_METHOD = {
         "method": "async_set_display_light",
         "schema": SERVICE_SET_DISPLAY_LIGHT_SCHEMA
     },
+    SERVICE_SET_SPEED: {
+        "method": "async_set_speed",
+        "schema": SERVICE_SET_SPEED_SCHEMA
+    }
 }
 
 async def async_setup_platform(hass, config, async_add_entities, discovery_info=None):

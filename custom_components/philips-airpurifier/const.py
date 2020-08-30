@@ -16,10 +16,12 @@ SERVICE_SET_LIGHT_BRIGHTNESS = "set_light_brightness"
 SERVICE_SET_CHILD_LOCK = "set_child_lock"
 SERVICE_SET_TIMER = "set_timer"
 SERVICE_SET_DISPLAY_LIGHT = "set_display_light"
+SERVICE_SET_SPEED = "set_speed"
 
 # Service attributes
 SERVICE_ATTR_ENTITY_ID = "entity_id"
 SERVICE_ATTR_MODE = "mode"
+SERVICE_ATTR_SPEED = "speed"
 SERVICE_ATTR_FUNCTION = "function"
 SERVICE_ATTR_HUMIDITY = "humidity"
 SERVICE_ATTR_BRIGHTNESS_LEVEL = "level"
@@ -30,6 +32,7 @@ SERVICE_ATTR_DISPLAY_LIGHT = "light"
 # Device attribute keys
 ATTR_MODEL = "model"
 ATTR_FUNCTION = "function"
+ATTR_SPEED = "speed"
 ATTR_USED_INDEX = "used_index"
 ATTR_PM25 = "pm25"
 ATTR_ALLERGEN_INDEX = "allergen_index"
@@ -113,7 +116,7 @@ MODE_MAP = {
 }
 
 SUPPORTED_SPEED_LIST = [MODE_AUTO, MODE_ALLERGEN,
-                        MODE_SLEEP, SPEED_1, SPEED_2, SPEED_3, SPEED_TURBO]
+                        MODE_BACTERIA, SPEED_1, SPEED_2, SPEED_3, SPEED_TURBO, SPEED_SILENT]
 
 # Function values
 FUNCTION_PURIFICATION = 'Purification'
