@@ -37,7 +37,7 @@ set_target_humidity:
       description: Name(s) of the entities to set target humidity
       example: "fan.living_room"
     humidity:
-      description: One of 40, 50, 60, 70
+      description: One of 40, 50, 60
       example: 40
 
 set_light_brightness:
